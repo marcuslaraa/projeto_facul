@@ -1,0 +1,37 @@
+.container__menu {
+    background-color: var(--cor-secundaria);
+}
+
+.container__menu__lista {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 1.7rem;  
+    position: relative;
+    
+}
+
+.container__menu__lista li a {
+    color: var(--cor-fonte-secundaria);
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.container__menu__lista li a:hover {
+    color: #E6DD3B;
+}
+
+.container__menu__sublista {
+    background-color: var(--cor-principal);
+    position: absolute;
+    display: none;
+    width: 10%;
+}
+
+.container__menu__sublista li {
+    border: solid 1px #fff;
+    padding: 0.4rem;
+}
+
+.container__menu__lista__item:hover > ul {
+    display: block;
+}

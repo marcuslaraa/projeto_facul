@@ -1,0 +1,15 @@
+:root {
+    --fonte-principal:'Roboto', sans-serif;
+    --cor-principal:#1E6F5C;
+    --cor-secundaria:#289672;
+    --cor-fonte-principal:#000;
+    --cor-fonte-secundaria:#fff;
+    --background:#E5E5E5;
+}
+
+.container {
+    color: var(--cor-fonte-secundaria);
+    font-family: var(--fonte-principal);
+    background-color: var(--background);
+    box-sizing: border-box;
+}

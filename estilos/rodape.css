@@ -1,0 +1,44 @@
+
+.container__rodape__contato {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: var(--cor-principal);
+    padding: 2rem;
+}
+
+.container__rodape__contato__lista {
+    display: flex;
+    gap: 1.5rem;
+    
+}
+
+.container__rodape__contato__lista li a {
+    text-decoration: none;
+    color: var(--cor-fonte-secundaria);
+    font-size: 1.7rem;
+    font-weight: 700;
+}
+
+.container__rodape__contato__lista li a:hover {
+    color: #E6DD3B;
+}
+
+.container__rodape__contato__icones {
+    display: flex;
+    align-items: center;
+}
+
+.container__rodape__contato__icones a img {
+    width: 70%;
+}
+
+.container__rodape__direitos {
+    background-color: var(--cor-secundaria);
+    padding: 1.3rem;
+    text-align: center;
+}
+
+.container__rodape__direitos p {
+    margin-bottom: 0.2rem;
+}

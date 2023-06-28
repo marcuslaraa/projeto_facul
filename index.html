@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cadê meu pet?</title>
+    <link rel="shortcut icon" href="imagens/icone.ico" type="image/x-icon">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="estilos/reset.css" />
+    <link rel="stylesheet" href="estilos/style.css" />
+    <link rel="stylesheet" href="estilos/cabecalho.css" />
+    <link rel="stylesheet" href="estilos/menu.css" />
+    <link rel="stylesheet" href="estilos/principal.css" />
+    <link rel="stylesheet" href="estilos/rodape.css" />
+  </head>
+  <body class="container">
+    <header class="container__cabecalho">
+      <a class="container__cabecalho__logo" href="index.html">
+        <img
+          src="imagens/Logo.svg"
+          alt="logo do site"
+        />
+      </a>
+      <input
+        class="container__cabecalho__busca"
+        type="text"
+        placeholder="Pesquisar Pets"
+      />
+      <section class="container__cabecalho__login">
+        <img
+          class="container__cabecalho__login__icone"
+          src="imagens/icone-login.svg"
+          alt="Icone de login"
+        />
+        <a class="login" href="paginas/login.html">
+          <p>Login/Cadastre-se</p>
+        </a>  
+      </section>
+    </header>
+
+    <main class="container__principal">
+      <!-- Criação do menu com menu dropdown e hover na seleção das opçoes -->
+      <nav class="container__menu">
+        <ul class="container__menu__lista">
+          <li class="container__menu__lista__item">
+            <a href="#">COMO FUNCIONA</a>
+            <ul class="container__menu__sublista">
+              <li><a href="paginas/sobre-nos.html">Sobre nós</a></li>
+              <li><a href="paginas/como-ajudar.html">Como ajudar?</a></li>
+              <li><a href="/paginas/fale-conosco.html">Fale Conosco</a></li>
+            </ul>
+          </li>
+          <li><a href="#">MEUS PETS CADASTRADOS</a></li>
+          <li><a href="/paginas/cadastro.html">ANUNCIE PET</a></li>
+        </ul>
+      </nav>
+      <!-- criação dos cards de cadastro e de achados -->
+      <h2 class="container__sub-titulo">Últimos Pets Cadastrados</h2>
+      <section class="container__card">
+        <div class="container__card__pet">
+          <img
+            class="card__foto"
+            src="imagens/pet_01.svg"
+            alt="Cachorro preto e branco"
+          />
+          <div class="card__nome__status">
+            <h2 class="card__nome">Luis Maurício</h2>
+            <p class="card__status">Perdido</p>
+          </div>
+          <p class="card__endereco">Av. Inglaterra, Londrina - PR 86046-010</p>
+          <p class="card__descricao">
+            Cachorro de médio porte, dócil, branco com pintas escuras no corpo.
+          </p>
+          <p class="card__report">Reportado 2 horas atrás</p>
+          <p class="info">
+            <a class="card__info" href="paginas/fale-conosco.html">Mais informações</a>
+          </p>
+        </div>
+
+        <div class="container__card__pet">
+          <img
+            class="card__foto"
+            src="imagens/pet_02.svg"
+            alt="Cachorro preto e branco"
+          />
+          <div class="card__nome__status">
+            <h2 class="card__nome">Cruela</h2>
+            <p class="card__status">Perdido</p>
+          </div>
+          <p class="card__endereco">
+            Av. Duque de Caxias, Londrina - PR 86027-000
+          </p>
+          <p class="card__descricao">
+            Gato de pequeno porte, dócil, cor caramelo, olhos verdes bem
+            chamativo.
+          </p>
+          <p class="card__report">Reportado há 2 dias</p>
+          <p class="info">
+            <a class="card__info" href="paginas/fale-conosco.html">Mais informações</a>
+          </p>
+        </div>
+
+        <div class="container__card__pet">
+          <img
+            class="card__foto"
+            src="imagens/pet_03.svg"
+            alt="Cachorro preto e branco"
+          />
+          <div class="card__nome__status">
+            <h2 class="card__nome">Poppy</h2>
+            <p class="card__status">Perdido</p>
+          </div>
+          <p class="card__endereco">Rua Guará, Ibiporã - PR 86200-000</p>
+          <p class="card__descricao">
+            Papagaio de porte médio com uma mancha vermelha em uma das penas.
+          </p>
+          <p class="card__report">Reportado há 1 hora atrás</p>
+          <p class="info">
+            <a class="card__info" href="paginas/fale-conosco.html">Mais informações</a>
+          </p>
+        </div>
+      </section>
+
+      <!-- Card Pets Encontrados -->
+      <h2 class="container__sub-titulo titulo_2">Histórias Felizes</h2>
+      <section class="container__card container__card__2">
+        <div class="container__card__pet container__card__pet2">
+          <img
+            class="card__foto"
+            src="imagens/pet_04.svg"
+            alt="Cachorro preto e branco"
+          />
+          <div class="card__nome__status">
+            <h2 class="card__nome">Ted</h2>
+            <p class="card__status encontrado">Encontrado</p>
+          </div>
+          <p class="card__endereco">Av. Inglaterra, Londrina - PR 86046-010</p>
+          <p class="card__descricao">
+            Cachorro de médio porte, dócil, branco com pintas escuras no corpo.
+          </p>
+          <p class="card__report">Reportado 2 horas atrás</p>
+          <p class="info">
+            <a class="card__info" href="paginas/fale-conosco.html">Mais informações</a>
+          </p>
+        </div>
+
+        <div class="container__card__pet container__card__pet2" >
+          <img
+            class="card__foto"
+            src="imagens/pet_05.svg"
+            alt="Cachorro preto e branco"
+          />
+          <div class="card__nome__status">
+            <h2 class="card__nome">Shanks</h2>
+            <p class="card__status encontrado">Encontrado</p>
+          </div>
+          <p class="card__endereco">Av. Inglaterra, Londrina - PR 86046-010</p>
+          <p class="card__descricao">
+            Cachorro de médio porte, dócil, branco com pintas escuras no corpo.
+          </p>
+          <p class="card__report">Reportado 2 horas atrás</p>
+          <p class="info">
+            <a class="card__info" href="paginas/fale-conosco.html">Mais informações</a>
+          </p>
+        </div>
+
+        <div class="container__card__pet container__card__pet2">
+          <img
+            class="card__foto"
+            src="imagens/pet_06.svg"
+            alt="Cachorro preto e branco"
+          />
+          <div class="card__nome__status">
+            <h2 class="card__nome">César</h2>
+            <p class="card__status encontrado">Encontrado</p>
+          </div>
+          <p class="card__endereco">Av. Inglaterra, Londrina - PR 86046-010</p>
+          <p class="card__descricao">
+            Cachorro de médio porte, dócil, branco com pintas escuras no corpo.
+          </p>
+          <p class="card__report">Reportado 2 horas atrás</p>
+          <p class="info">
+            <a class="card__info" href="paginas/fale-conosco.html">Mais informações</a>
+          </p>
+        </div>
+      </section>
+
+      <!-- Breve artigo orientando como cadastrar pet perdido -->
+      <article class="container__principal__artigo">
+        <h3>Perdeu o seu pet?</h3>
+        <p>
+          Perdeu seu pet e deseja cadastrá-lo em nosso site? Não se preocupe,
+          estamos aqui para ajudar! Para registrar seu animalzinho como perdido,
+          siga as instruções abaixo: <br><br> Acesse nosso site e localize a opção de
+          <span style="font-weight: bold;">"Anuncie Pet"</span> na página principal. Clique no botão
+          correspondente para acessar o formulário de cadastro. <br><br> Nesse
+          formulário, você encontrará campos para preencher com as informações
+          do seu pet. Informe o nome do animal, sua raça, porte, cor e qualquer
+          característica especial que possa ajudar na identificação. Além disso,
+          forneça a data e o local onde ele desapareceu. Quanto mais detalhes
+          você fornecer, maiores serão as chances de encontrarmos seu pet. <br><br> Após
+          preencher todos os campos necessários, clique no botão "Enviar" ou
+          "Cadastrar" para registrar o seu pet perdido em nosso site. <br><br> Nossa
+          equipe estará pronta para revisar as informações e disponibilizá-las
+          escolher nosso site para ajudá-lo(a) a encontrar seu pet perdido. <br><br>
+          Estamos empenhados em reunir famílias com seus animais de estimação e
+          faremos o possível para auxiliá-lo(a) nesse processo.
+        </p>
+        <p class="container__principal__artigo__botao">
+          <a href="/paginas/cadastro.html">ANUNCIE PET</a>
+        </p>
+      </article>
+    </main>
+
+    <footer class="container__rodape">
+      <section class="container__rodape__contato">
+        <ul class="container__rodape__contato__lista">
+          <li><a href="paginas/sobre-nos.html">Sobre nós</a></li>
+          <li><a href="paginas/como-ajudar.html">Como ajudar?</a></li>
+          <li><a href="paginas/fale-conosco.html">Fale Conosco</a></li>
+        </ul>
+        <figure class="container__rodape__contato__icones">
+          <a href="https://accounts.google.com/v3/signin/identifier?dsh=S-1694128825%3A1687460871711729&continue=https%3A%2F%2Fmail.google.com%2Fmail%2F&ifkv=Af_xneF8TixF08WjKfO0xRLA6fMSN3IsO7CfZrp7V7eosXOyGsnrTxpZJiIQUh2HEMqqeY-IPnQoOA&rip=1&sacu=1&service=mail&flowName=GlifWebSignIn&flowEntry=ServiceLogin"
+            ><img src="imagens/email-icone.svg" alt="Icone de E-mail"
+          /></a>
+          <a href="https://www.instagram.com/"
+            ><img src="imagens/insta-icone.svg" alt="Icone do Instagram"
+          /></a>
+          <a href="https://pt-br.facebook.com/"
+            ><img src="imagens/face-icone.svg" alt="Icone do Facebook"
+          /></a>
+        </figure>
+      </section>
+
+      <section class="container__rodape__direitos">
+        <p>Desenvolvido por: Marcus Lara</p>
+        <p>&copy;2023 - Todos os direitos reservados</p>
+      </section>
+    </footer>
+  </body>
+</html>

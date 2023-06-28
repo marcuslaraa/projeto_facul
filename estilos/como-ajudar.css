@@ -1,0 +1,9 @@
+.container__sobre-nos p a {
+    color: var(--cor-fonte-secundaria);
+    font-weight: 700;
+    list-style-type: none;
+}
+
+.container__sobre-nos p a:hover {
+    color: #E6DD3B;
+}

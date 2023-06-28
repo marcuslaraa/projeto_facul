@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadê meu pet? - Login</title>
+    <link rel="shortcut icon" href="../imagens/icone.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../estilos/reset.css" />
+    <link rel="stylesheet" href="../estilos/style.css" />
+    <link rel="stylesheet" href="../estilos/principal.css" />
+    <link rel="stylesheet" href="../estilos/rodape.css" />
+    <link rel="stylesheet" href="../estilos/login.css">
+    
+</head>
+<body class="container">
+    <main class="container__principal">
+        <form class="formulario__login">
+            <h1 class="formulario__login__titulo">Faça seu login</h1>
+            <div class="nome">
+                <label for="email">Seu E-mail</label>
+                <input name="email" type="text" required placeholder="example@gmail.com">
+            </div>
+
+            <div class="senha">
+                <label for="senha">Sua senha</label>
+                <input name="senha" type="password" required placeholder="************">
+            </div>
+            
+            <div class="checkbox">
+                <input type="checkbox" name="check" id="check">
+                <label for="check">Manter-me logado</label>
+            </div>
+
+            <div class="container__canvas">
+                <canvas id="canvas" width="200" height="50"></canvas>
+            </div>
+
+            <p>Ainda não tem conta? <span><a href="#">Cadastre-se</a></span></p>
+
+            <img src="../imagens/Logo.svg" alt="Logo do site">
+        </form>
+    </main>
+
+    <script src="../js/canvas.js"></script>
+</body>
+</html>

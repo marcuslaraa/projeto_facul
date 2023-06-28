@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cadê meu pet? - Fale Conosco</title>
+    <link rel="shortcut icon" href="../imagens/icone.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../estilos/reset.css" />
+    <link rel="stylesheet" href="../estilos/style.css"/>
+    <link rel="stylesheet" href="../estilos/cabecalho.css" />
+    <link rel="stylesheet" href="../estilos/cadastro.css" />
+    <link rel="stylesheet" href="../estilos/rodape.css">
+    <script src="../js/cadastro.js"></script>
+  </head>
+  <body  class="container">
+    <header class="container__cabecalho">
+      <a class="container__cabecalho__logo" href="../index.html">
+        <img
+          
+          src="../imagens/Logo.svg"
+          alt="logo do site"
+        />
+      </a>
+
+      <section class="container__cabecalho__login">
+        <img
+          class="container__cabecalho__login__icone"
+          src="../imagens/icone-login.svg"
+          alt="Icone de login"
+        />
+        <a class="login" href="login.html">
+          <p>Login/Cadastre-se</p>
+        </a>
+      </section>
+    </header>
+    <main class="container__principal">
+      <h1 class="container__principal__titulo">Fale Conosco</h1>
+      <form class="container__principal__formulario">
+        <div>
+          <label for="nome"
+            >Nome<span class="obrigatorio">*</span></label
+          >
+          <br />
+          <input
+            class="entrada-dados"
+            type="nome"
+            name="nome"
+            id="nome"
+            placeholder="Insira seu nome."
+            required
+          />
+        </div>
+
+        <div>
+          <label for="opcao"
+            >E-mail <span class="obrigatorio">*</span></label
+          >
+          <br />
+          <input
+            class="entrada-dados"
+            type="email"
+            id="email"
+            placeholder="Insira o seu E-mail."
+            required
+          />
+        </div>
+
+
+        <div>
+          <label for="notas">Mensagem</label>
+          <br />
+          <textarea
+            name="notas"
+            id="notas"
+            cols="35"
+            rows="6"
+            placeholder="Insira sua Mensagem. "
+          ></textarea>
+        </div>
+
+        <div class="btn">
+          <button class="btn-form" type="submit">Enviar</button>
+          <button class="btn-form" type="reset">Limpar Formulário</button>
+        </div>
+      </form>
+    </main>
+    <footer class="container__rodape">
+      <section class="container__rodape__contato">
+        <ul class="container__rodape__contato__lista">
+          <li><a href="#">Sobre nós</a></li>
+          <li><a href="#">Como ajudar?</a></li>
+          <li><a href="#">Fale Conosco</a></li>
+        </ul>
+        <figure class="container__rodape__contato__icones">
+          <a href=""
+            ><img src="../imagens/email-icone.svg" alt="Icone de E-mail"
+          /></a>
+          <a href=""
+            ><img src="../imagens/insta-icone.svg" alt="Icone do Instagram"
+          /></a>
+          <a href=""
+            ><img src="../imagens/face-icone.svg" alt="Icone do Facebook"
+          /></a>
+        </figure>
+      </section>
+
+      <section class="container__rodape__direitos">
+        <p>Desenvolvido por: Marcus Lara</p>
+        <p>&copy;2023 - Todos os direitos reservados</p>
+      </section>
+    </footer>
+
+    
+  </body>
+</html>

@@ -1,0 +1,57 @@
+.container__cabecalho {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color:var(--cor-principal);
+    color:var(--cor-fonte-secundaria);
+}
+
+.container__cabecalho__logo {
+    width: 25%;
+}
+
+.container__cabecalho__logo img {
+    width: 90%;
+    padding: 1rem 0 0.5rem 2rem;
+}
+
+.container__cabecalho__busca {
+    height: 6vh;
+    width:25%;
+    padding: 0.2rem 4rem 0.2rem 0;
+    border-radius: 0.4rem;
+    border: none;
+    position: relative;
+    font-size: 1rem;
+    background-image: url(../imagens/lupa-pet.svg);
+    background-repeat: no-repeat;
+    background-size: 2.5rem;
+    background-position: center right;
+}
+
+.container__cabecalho__busca::placeholder {
+    padding: 0 1rem;
+    font-size: 1.7rem;
+    position: absolute;
+    top: 20%;
+}
+
+.container__cabecalho__login {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0.5rem 3rem 0.5rem 0;
+    font-size: 1rem;
+}
+
+.login {
+    text-decoration: none;
+    list-style: none;
+    color: var(--cor-fonte-secundaria);
+    font-weight: 700;
+}
+
+.container__cabecalho__login__icone {
+    width: 50%;
+}
+

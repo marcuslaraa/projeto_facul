@@ -1,0 +1,206 @@
+.container__sub-titulo {
+    color: #000;
+    font-size: 2.4rem;
+    font-weight: bold;
+    padding: 3rem 0 1.8rem 6rem;
+}
+
+
+.container__card {
+    color: var(--cor-fonte-principal);
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: 
+    "foto foto"
+    "nome status"
+    "endereco endereco"
+    "descricao descricao"
+    "report report"
+    "info info";
+    padding: 0 5rem 0 5rem;
+    margin: 0 auto;
+    margin-bottom: 6rem;
+   
+    
+    
+}
+
+.container__card__pet {
+    background-color: var(--cor-fonte-secundaria);
+    padding: 1.2rem 1.4rem 1.4rem 1.2rem;
+    margin: 0.5rem;
+    box-shadow: 0px 5px 5px #00000060;
+    
+}
+
+
+.card__foto {
+    grid-area: foto;
+    width: 100%;
+    margin-bottom: 0.5rem;
+}
+
+.card__nome__status {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+
+.card__nome {
+    grid-area: nome;
+    font-size:1.5rem;
+    font-weight: bold;
+}
+
+.card__status {
+    grid-area: status;
+    font-size: 1rem;
+    background-color: #ff0000;
+    padding: 0.4rem;
+    color: var(--cor-fonte-secundaria);
+    border-radius: 0.5rem;
+}
+
+
+.card__endereco {
+    grid-area: endereco;
+    margin: 0.5rem 0;
+    font-size: 1rem;
+    font-weight: 700;
+    
+}
+
+.card__descricao {
+    grid-area: descricao;
+    font-size: 1rem;
+    font-weight: 400;
+    margin-bottom: 0.7rem;
+}
+
+.card__report {
+    grid-area: report;
+    margin-bottom: 1.5rem;
+    font-size: 1rem;
+    text-align: center;
+}
+
+.card__info {
+    grid-area: info;
+    background-color: var(--cor-principal);
+    color: #fff;
+    text-decoration: none;
+    padding: 0.7rem 1rem;
+    font-weight: 700;
+    border-radius: 0.5rem;
+}
+
+.card__info:hover {
+    color: #E6DD3B;
+}
+
+.info {
+    text-align: center;
+    margin-bottom: 0.5rem;
+}
+
+.titulo_2 {
+    color: var(--cor-fonte-secundaria);
+    background-color:var(--cor-secundaria) ;
+    padding: 2rem 0 0 6rem ;
+
+}
+
+.container__card__2 {
+
+    background-color: var(--cor-secundaria);
+    padding: 1rem 5rem 6rem 5rem ;
+    
+}
+
+.encontrado {
+    background-color: var(--cor-principal);
+    font-size: 1rem;
+    padding: 0.6rem;
+}
+
+.container__principal__artigo {
+    color: var(--cor-fonte-principal);
+    padding: 0 5rem;
+}
+
+.container__principal__artigo h3 {
+    text-align: center;
+    font-size: 3.5rem;
+    font-weight: 700;
+    
+}
+
+.container__principal__artigo p {
+    padding: 2rem 0;
+    font-size: 1.5rem ;
+}
+
+.container__principal__artigo__botao{
+    text-align: center;
+    margin: 1rem 0 6rem 0;
+    
+}
+
+.container__principal__artigo__botao a {
+    text-decoration: none;
+    background-color: var(--cor-principal);
+    padding: 1.5rem 8rem;
+    color: var(--cor-fonte-secundaria);
+    font-weight: 700;
+    border-radius: 1rem;
+    font-size: 2.2rem;
+}
+
+.container__principal__artigo__botao a:hover {
+    color: #E6DD3B;
+}
+
+@media (max-width:992px) {
+    .container__card__pet {
+
+        width: 70%;
+    }
+
+    .container__card__pet2 {
+        width: 60%;
+    }
+
+    .card__info{
+        padding: 0.5rem;
+        font-size: 0.7rem;
+    }
+
+    .card__status{
+        padding: 0.4rem;
+        font-size: 0.6rem;
+    }
+
+    .card__nome {
+        font-size: 1.1rem;
+    }
+}
+
+@media (max-width:572px) {
+
+    .container__card {
+        padding: 0;
+        gap: 0.5rem;
+        
+    }
+
+    .container__card__2 {
+        padding: 0;
+        gap: 0.5rem;
+        
+    }
+
+    .container__card__pet {
+        margin: 0 auto;
+    }
+}
